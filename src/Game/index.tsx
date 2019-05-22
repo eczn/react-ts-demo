@@ -9,7 +9,7 @@ export type GameHistory = {
 
 export function Game() {
     // Init State
-    const _INIT_HISTORY_ = [{ squares: Array(9).fill(null) }];
+    const _INIT_HISTORY_: GameHistory[] = [{ squares: Array(9).fill(null) }];
 
     // UseState
     const [history, setHistory] =
