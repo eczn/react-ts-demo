@@ -3,7 +3,12 @@ import './App.css';
 
 import logo from './logo.svg';
 
-class App extends React.Component {
+// 静态类型
+interface Props {
+
+}
+
+class App extends React.Component<Props> {
   public render() {
     return (
       <div className="App">
