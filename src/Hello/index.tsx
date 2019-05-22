@@ -1,10 +1,10 @@
 import * as React from 'react';
 import './helloworld.css';
 
-export default function hello() {
+export function Hello() {
     return (
         <h1 className='header'>
-            welcome!This is a Index page.
+            welcome! This is a Index page.
         </h1>
     )
 }
