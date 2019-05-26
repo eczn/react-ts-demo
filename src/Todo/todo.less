@@ -1,0 +1,86 @@
+.theButton() {
+    user-select: none;
+    cursor: pointer;
+    padding: 2px 8px;
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+
+    color: #BBB;
+    transition: color .3s;
+
+    &:hover {
+        color: #222;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.todo-main {
+    width: 500px;
+    margin: 0 auto;
+
+    .no-todos {
+        text-align: center;
+        padding: 4em 0;
+        color: #BBB;
+    }
+
+    > h1 {
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .one-todo {
+        padding-left: 1em;
+        border: 1px solid #DEDEDE;
+        position: relative;
+        margin-bottom: 2em;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+        .title {
+            font-size: 22px;
+        }
+    
+        .text, input {
+            padding-left: 1em;
+            padding-top: 1em;
+            padding-bottom: 2em;
+        }
+    
+        .time {
+            position: absolute;
+            top: 4px;
+            right: 16px;
+            color: #BBB;
+            font-size: 12px;
+        }
+
+        .remove {
+            .theButton();
+        }
+    }
+
+    
+    .btns {
+        text-align: center;
+
+        button {
+            .theButton();
+            margin: 0 .5em;
+        }
+    }
+
+    .intro {
+        user-select: none;
+        margin-bottom: 2em;
+        text-align: center;
+        font-size: 12px;
+        color: #BBB;
+    }
+}
